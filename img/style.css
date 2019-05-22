@@ -1,0 +1,28 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li::before {
+    content: '-';
+    margin-right: 10px;
+}
+.developer img {
+    width: 50%;
+    height: 50%;
+}
+
+.useful-link a{
+    color: aliceblue;
+}
+.useful-link {
+    margin-bottom: 20px;
+}
+
+.summary {
+    text-align: start;
+}
+
