@@ -1,5 +1,23 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img{
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    padding-bottom: 20px;
+}
+
+.reveal section img {
+    margin: 0px;
+    border: none;
+}
+
+.typescript {
+    color:rgb(94, 154, 223);
 }
 
 ul li {
@@ -11,18 +29,69 @@ ul li::before {
     margin-right: 10px;
 }
 .developer img {
-    width: 50%;
-    height: 50%;
+    width: 65%;
+    height: 65%;
 }
 
 .useful-link a{
-    color: aliceblue;
+    font-size: 36px;
+    color: blue;
 }
+
 .useful-link {
     margin-bottom: 20px;
 }
 
 .summary {
-    text-align: start;
+    text-align: left;
+}
+.reveal pre code {
+    overflow-x: hidden;
 }
 
+.reveal pre {
+    font-size: 1em;
+}
+
+.typing p {
+    font-size: 22px;
+}
+
+.code-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 90%;
+    
+}
+
+.code-div .fragment, 
+.code-div div {
+    width: 47%;
+    padding-left: 10px;
+
+    border: 1px black solid;
+    
+    font-size: 1rem;
+    text-align: left;
+}
+
+h5 {
+    color: grey;
+    font-size: 36px;
+}
+
+.install-command {
+    display: block;
+    margin-bottom: 27px;
+
+    font-size: 1em;
+    color: grey;
+    text-align: center;
+}
+
+.prelink {
+    color: white;
+}

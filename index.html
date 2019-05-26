@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 		<link rel="stylesheet" href="img/style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -26,42 +26,149 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-color="darkblue" >
+
+				<section class="logo">
+					<img src="img/logo.png" alt="TypeScript">
+					<!--<span>ssss...</span>-->
 					<h1>Typescript</h1>
 				</section>
-				<section class="developer"><p>Developer Typescript - Anders Hejlsberg</p><img src="img/anders-hejlsberg.jpg" alt="image of developer -Hejlsberg"></section>
-				<section>
-						
-					<section><h3>Typescript - ...</h3>
-						<p>is a strongly typed, object oriented, compiled language.</p></section>
-					<section><h3>Typescript - ...</h3>
-						<p>is just JavaScript</p><img src="img/ts-in-js.png" alt="type is js"></section>
-					<section >
-						<span class="summary">Summary:</span>
-						<p>TypeScript is JavaScript plus some additional features</p>
-					</section>
-					
+
+				<section class="developer">
+					<h2></h2>
+					<p>Developer<span class="typescript">Typescript</span> - Anders Hejlsberg</p>
+					<img src="img/anders-hejlsberg.jpg" alt="image of developer -Hejlsberg">
 				</section>
+
 				<section>
-					<ul class="features"> Features (===Benefits)
-						<li> can be used for both, client-side as well as server-side development;</li>
-						<li>Object-oriented;</li>
-						<li>Compilation;</li>
-						<li>Strong-typing;</li>
-						<li>Support for type definitions.</li>
+					<section>
+						<h3><span class="typescript">Typescript - </span></h3>
+						<p class="fragment">is a strongly typed, object oriented, compiled language.</p>
+						<div class="fragment">
+							<p>is just JavaScript</p><img src="img/ts-in-js.png" alt="type is js">
+						</div>
+					</section>
+		
+					<section >
+						<p class="summary">Summary:</p>
+						<p><span class="typescript">TypeScript</span> is JavaScript plus some additional features</p>
+					</section>
+				</section>
+
+				<section>
+						<h4> Components</h4>
+						<ul>
+							<li>Language</li>
+							<li>The TypeScript Compiler (TSC)</li>
+							<li>The TypeScript Language Service</li>
+						</ul>
+				</section>
+
+				<section>
+					<section>
+						<h4> Features (Benefits)</h4>
+						<ul class="features">
+							<li class="fragment">object-oriented;</li>
+							<li class="fragment">compilation;</li>
+							<li class="fragment">strong-typing;</li>
+							<li class="fragment">supports other JS libraries and supports type definitions ;</li>
+							<li class="fragment">support ES6 features.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Оbject-oriented</h4>
+						<p><span class="typescript">Typescript</span> support concepts like interfaces, generics, inheritance, and method access modifiers;</p>
+						<div class="code-div">
+								<div class="fragment">
+										<p class="title-compare">Example of interface:</p>
+<pre><code>interface IScore {
+  scorestudentId: string;
+  calculateScore(): number;
+  }
+class OutputStudentScore implements IScore {
+  scorestudentId: string;
+  calculateScore(): number {
+  return 0;
+  }
+}</code></pre>
+								</div>
+								<div class="fragment">
+										<p class="title-compare">Example of inheritance:</p>
+<pre><code>class Person{
+  Firstname:string;
+  }
+class RSSchool extends Person {
+  Role:string
+  private AddPerson(){
+  this.Role="Student";
+  this.FirstName="Kitty";
+  }
+}</code></pre>
+								</div>
+								<div class="fragment">
+										<p class="title-compare">Example of generic:</p>
+										<pre><code>
+function identity<T> (arg: T): T {
+return arg; 
+}
+let output = identity <string>("myString");
+										</code></pre>
+								</div>
+								
+								<div class="fragment">
+										<p class="title-compare">Example of access modifiers:</p>
+										<pre><code>
+class RSSchool{
+	public taskName:string;
+	private taskSolution:string;
+}
+										</code></pre>
+								</div>
+						</div>
+						
+					</section>
+
+					<section>
+						<h4>Compilation</h4>
+						<p><span class="typescript">TypeScript</span> will compile the code and generate compilation errors, if it finds some sort of syntax errors. This helps to highlight errors before the script is run.</p>
+					</section>
+
+					<section class="typing">
+						<h4>Strong Static Typing </h4>
+						<p>Types are  had to define when declaring variables and you cannot assign other values other than the type defined which is very possible in JavaScript.</p>
+				
+						<div class="fragment">
+							<h4>Typing</h4>
+							<img src="img/type.jpg" alt="define type in typescript">
+							<div class="code-div">
+								<div>
+									<p class="title-compare">Example:</p>
+									<pre><code>
+let num: number = 209;
+let name: string = 'Alena';
+let isPresent: boolean = true;
+									</code></pre>
+								</div>
+							</div>	
+						</div>
+					</section>
+				
+				</section>
+
+				<section>
+					<h4>Installing <span class="typescript">TypeScript</span></h4>
+					<p>There are two main ways to get the TypeScript tools:</p>
+					<ul>
+						<li>Via npm:<span class="install-command">npm install -g typescript</span> </li>
+						<li>By installing TypeScript’s Visual Studio plugins</li>
 					</ul>
 				</section>
 
 				<section>
-					<section>1</section>
-					<section>2</section>
-					<section>3</section>
-					<section>4</section>
-				</section>
-				<section>
-					<ul class="useful-link"> Useful link:
-					<li><a href="https://www.typescriptlang.org/">TypeScript Official Website</a></li>
-					<li><a href="https://en.wikipedia.org/wiki/TypeScript">Wikipedia Reference for TypeScript</a></li>
+					<h4> Useful link:</h4>
+					<ul class="useful-link">
+					<li><a href="https://www.typescriptlang.org/"><span class="prelink">TypeScript Official Website:</span><br> https://www.typescriptlang.org/</a></li>
+					<li><a href="https://www.typescriptlang.org/play/"><span class="prelink">Typescript online console:</span><br>https://www.typescriptlang.org/play/ </a></li>
 					</ul>
 				</section>
 			</div>
