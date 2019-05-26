@@ -95,3 +95,11 @@ h5 {
 .prelink {
     color: white;
 }
+
+.end {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    text-align: left;
+    font-size: 28px;
+}
